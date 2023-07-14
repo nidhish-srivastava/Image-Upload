@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
+import UploadDp from "./components/UploadDp"
 
 function App() {
-  const [userImage,setUserImage] = useState("")
   return (
-    <div>App</div>
+    <UploadDp/>
   )
 }
 
