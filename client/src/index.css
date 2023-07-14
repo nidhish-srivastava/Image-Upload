@@ -6,16 +6,16 @@ body{
   display: flex;
 min-height: 100vh;
 align-items: center;
+flex-direction: column;
 justify-content: center;
 }
 
 .dp-wrapper {
-  width: 100px;
-  height: 100px;
+  width: 200px;
+  height: 200px;
   overflow: hidden;
-  border: 2px solid white;
-  border-radius: 999px;
-  margin-top: -50px;
+  /* border: 2px solid white; */
+  border-radius: 50%;
   cursor: pointer;
   background-color: black;
   transition: all 0.2s;
