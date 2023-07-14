@@ -8,7 +8,7 @@ function UploadDp() {
 
   const getCompressedImage = async (imgString) => {
     // if greater than 200kb compress
-    if (imgString.length > 200000) {
+    if (imgString.length > 20000) {
       const canvas = document.createElement("canvas");
       const ctx = canvas.getContext("2d");
 
