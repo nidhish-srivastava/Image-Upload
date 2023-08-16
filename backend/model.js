@@ -1,7 +1,10 @@
-const mongoose = require("mongoose");
+import mongoose from "mongoose"
 
 const userProfileSchema = new mongoose.Schema({
-    dp : String,
+    imageUrl : String,
+    username : String
 }); 
 
-module.exports = mongoose.model("UserProfile", userProfileSchema);
+const UserProfile = mongoose.model("UserProfile", userProfileSchema);
+
+export default UserProfile
