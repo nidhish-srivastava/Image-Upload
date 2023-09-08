@@ -18,9 +18,9 @@ app.use(bodyParser.json({limit : '10mb'}))
 app.use(bodyParser.urlencoded({extended : true,limit : '10mb'}))
 
 cloudinary.config({
-    cloud_name :"dvlz73wcr",
-    api_key : 414997947386377,
-    api_secret : "pcZZGkrChX5shu5MoWOpNqEztp4"
+    cloud_name :process.env.CLOUD_NAME,
+    api_key : process.env.API_KEY,
+    api_secret : process.env.API_KEY
 })
 
 

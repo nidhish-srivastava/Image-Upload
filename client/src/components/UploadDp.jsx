@@ -7,8 +7,9 @@ function UploadDp() {
   const [username,setUsername] = useState("")
 
 
- // * NO USE RIGHT NOW !!!  Logic for base64 image conversion so that we can preview it as well
+ //* !!!  Logic for base64 image conversion so that we can preview it as well
   const handleImage = (e) => {
+    console.log("asdasd");
     // create a file input dynamically
     const fileInput = document.createElement("input");
     fileInput.type = "file";
@@ -45,6 +46,9 @@ function UploadDp() {
     fileInput.click();
   };
 
+  console.log(userImg);
+
+  //* No use right now
   const onFileResize = e =>{
     const file = e.target.files[0];
 
